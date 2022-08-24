@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="../CSS/carreras.css" />
+    <title>CODIGO/C13</title>
+  </head>
+
+  <body>
+    <!-- nav -->
+    <!-- Menú de navegación donde se incluye el logo, los items del menú y el botón de login, 
+que en este caso está creado con la etiqueta <a></a> -->
+
+    <nav class="navbar">
+      <div class="logo-container">
+        <img class="logo" src="../assets/LogoAmarillo.png" alt="logo de la pagina" />
+      </div>
+
+      <button aria-label="Name" class="nav-toggle">
+        <i class="ph-list"></i>
+      </button>
+
+      <div class="navegation">
+      <div class="navbar-menu">
+        <a class="a-navbar" href="../HTML/INDEX.html" aria-label="true"
+          >INICIO</a
+        >
+        <a class="a-navbar" href="../HTML/Carreras.html" aria-label="true"
+          >CARRERAS</a
+        >
+      </div>
+
+      <div class="container-login-button">
+        <a
+          class="ph-user"
+          href="#"
+          aria-label="true"
+          area-placeholder="inicio de session"
+        ></a>
+      </div>
+    </div>
+    </nav>
+
+    <!-- totp -->
+    
+    <i class="ph-arrow-circle-up" id="goTop"></i>
+
+    <!-- en este punto del codigo se ubican las carreras -->
+
+    <section class="card-items" href="INDEX.html" aria-label="true">
+
+      <div class="card-frontend">
+
+        <div class="div-card-content">
+          <h3 class="card-title">FRONTEND</h3>
+          <p class="card-description">
+            Es la parte visible, la que muestra el diseño, los contenidos y la
+            que permite a los visitantes navegar por las diferentes páginas
+            mientras lo deseen. Frontend se usan otros términos interfaz de usuario.
+          </p>
+        </div>
+        
+      </div>
+
+      <div class="card-backend">
+        <div class="div-card-content">
+          <h3 class="card-title">BACKEND</h3>
+          <p class="card-description">
+            Este sistema recoge información de los usuarios u otros sistemas de
+            tratamiento de datos en la compañía. Es el encargado de gestionar la
+            información que proporciona el usuario recogida por el sitio web.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-fullstack">
+        <div class="div-card-content">
+          <h3 class="card-title">FULL STACK</h3>
+          <p class="card-description">
+            Un Full Stack es la persona responsable de la creación y el
+            mantenimiento de una aplicación web. Por este emotivo, es importante
+            que el Full Stack tenga conocimientos de desarrollo Front-End y
+            Back-End.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.all.min.js"></script>
+    <script src="../scripts/carreras.js"></script>
+  </body>
+</html>

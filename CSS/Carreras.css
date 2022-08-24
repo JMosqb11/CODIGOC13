@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+  }
+  
+  /* estos son las familia de texto del manual corporativo */
+  
+  @font-face {
+    font-family: "FuenteLight-trial";
+    src: url("../FONTS/Cocogoose Pro Light-trial.ttf");
+  }
+  
+  @font-face {
+    font-family: "FuenteThink-trial"; /*muy delgada*/
+    src: url("../FONTS/Cocogoose Pro Thin-trial.ttf");
+  }
+  
+  @font-face {
+    font-family: "FuentePro-trial"; /*gruesa*/
+    src: url("../FONTS/Cocogoose Pro-trial.ttf");
+  }
+  
+  /* estilos para la edición del scroll de la pagina */
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  /* estilos para el menú de navegación, incluyendo el diseño responsivo */
+  
+  body {
+    background-color: black;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 150px;
+    margin: 20px 10px;
+  }
+  
+  .a-navbar {
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    color: white;
+    font-family: "FuentePro-trial";
+  }
+  
+  .a-navbar:hover {
+    text-decoration: underline;
+  }
+  
+  .container-login-button {
+    padding: 0px 20px 0px 0px;
+  }
+  
+  .navegation{
+    display: flex;
+    align-items: center;
+  }
+  
+  .ph-user {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+  }
+  
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0px 20px;
+    display: none;
+  }
+  
+  /* totop */
+  
+  .ph-arrow-circle-up {
+    font-size: 40px;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 80%;
+    transform: translateY(50%);
+    padding: 20px;
+    color: #3896cc;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+    cursor: pointer;
+  }
+  
+  .ph-arrow-circle-up.is-visible {
+    opacity: 1;
+  }
+  
+  /* inicio de sesion con js */
+  
+  .content-dv-4x {
+    width: 454px;
+    height: 400px;
+    background-color: #ffffff;
+    z-index: auto;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: none;
+  }
+  
+  .img-lg-ln {
+    width: 200px;
+  }
+  
+  .ipt-lg {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ouput {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+  }
+  
+  .ln-txt-9 {
+    font-family: "FuenteThink-trial";
+    font-size: 14px;
+  }
+  
+  .swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #ffcb05;
+    color: #000;
+    font-size: 1em;
+    font-weight: bolder;
+  }
+
+/* contenedor de carreras¿ */
+
+
+
+.card-items{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.card-frontend{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 30px;
+    background-image: url('../IMAGE/frontend.jpg');
+    background-size: cover;
+}
+
+.card-backend{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 30px;
+    background-image: url('../IMAGE/backend.jpg');
+    background-size: cover;
+}
+
+.card-fullstack{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 30px;
+    background-image: url('../IMAGE/fullstack.jpg');
+    background-size: cover;
+}
+
+.div-card-content{
+    width: 360px;
+    height: 100px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.card-title{
+    font-family: "FuenteLight-trial";
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card-description{
+    font-family: "FuenteThink-trial";
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* nav */
+
+    .logo {
+        width: 130px;
+        margin: 20px 20px;
+    }
+
+    .login-button {
+        padding: none;
+        font-size: 8.7px;
+        text-align: center;
+    }
+
+    .navbar{
+        position:static;
+    
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 81px;
+        width: 350px;
+        padding: 0px 20px;
+        left: 100%;
+        transition: left 0.3s;
+        z-index: 100;
+        background-color: white;
+    }
+   
+    .a-navbar{
+    line-height: 40px;
+    color: black;
+    }
+
+    .navbar-menu_visible{
+        left: 0;
+    }
+
+    /* inicio de session con js */
+
+    .content-dv-4x{
+        width: 300px;
+        height: 400px;
+        border: none;
+        
+    }
+
+    .ouput{
+        display: flex;
+        width: 200px;
+        height: 40px;
+        margin-bottom: 10px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid black;
+    }
+
+    /* carreras */
+
+    .card-items{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px;
+  }
+
+    .card-frontend{
+      width: 300px;
+      height: 400px;
+      margin-bottom: 20px;
+  }
+  
+  .card-backend{
+      width: 300px;
+      height: 400px;
+      margin-bottom: 20px;
+  }
+  
+.card-fullstack{
+      width: 300px;
+      height: 400px;
+  }
+  
+  .div-card-content{
+      width: 260px;
+  }
+  .card-description{
+      font-family: "FuenteThink-trial";
+      font-weight: bold;
+      font-size: 10px;
+  }
+  
+  
+    /* FOOTER */
+
+    .container-footer {
+        width: 100%;
+        max-width: 1300px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 40px 0px;
+        justify-content: center;
+    }
+
+    .p-frases {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .icon-social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy {
+        font-size: 12px;
+    }
+}

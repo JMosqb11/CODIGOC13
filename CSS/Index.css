@@ -1,0 +1,527 @@
+/* estilos generales para la pagina */
+
+* {
+  margin: 0;
+}
+
+/* estos son las familia de texto del manual corporativo */
+
+@font-face {
+  font-family: "FuenteLight-trial";
+  src: url("../FONTS/Cocogoose Pro Light-trial.ttf");
+}
+
+@font-face {
+  font-family: "FuenteThink-trial"; /*muy delgada*/
+  src: url("../FONTS/Cocogoose Pro Thin-trial.ttf");
+}
+
+@font-face {
+  font-family: "FuentePro-trial"; /*gruesa*/
+  src: url("../FONTS/Cocogoose Pro-trial.ttf");
+}
+
+/* estilos para la edición del scroll de la pagina */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+/* estilos para el menú de navegación, incluyendo el diseño responsivo */
+
+.header {
+  background-image: url("../IMAGE/computer.jpg");
+  background-size: cover;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+  margin: 20px 10px;
+}
+
+.a-navbar {
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+  color: white;
+  font-family: "FuentePro-trial";
+}
+
+.a-navbar:hover {
+  text-decoration: underline;
+}
+
+.navegation{
+  display: flex;
+  align-items: center;
+}
+
+.container-login-button {
+  padding: 0px 20px 0px 0px;
+}
+
+.ph-user {
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0px 20px;
+  display: none;
+}
+
+/* totop */
+
+.ph-arrow-circle-up {
+  font-size: 40px;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 80%;
+  transform: translateY(50%);
+  padding: 20px;
+  color: #0dccac;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+  cursor: pointer;
+}
+
+.ph-arrow-circle-up.is-visible {
+  opacity: 1;
+}
+
+/* inicio de sesion con js */
+
+.content-dv-4x {
+  width: 454px;
+  height: 400px;
+  background-color: #ffffff;
+  z-index: auto;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: none;
+}
+
+.img-lg-ln {
+  width: 200px;
+}
+
+.ipt-lg {
+  display: flex;
+  flex-direction: column;
+}
+
+.ouput {
+  display: flex;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid black;
+}
+
+.ln-txt-9 {
+  font-family: "FuenteThink-trial";
+  font-size: 14px;
+}
+
+.swal2-styled.swal2-confirm {
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #ffcb05;
+  color: #000;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+/* BIENVENIDO */
+
+.page-principal-container {
+  width: 1250px;
+  height: 550px;
+  border-radius: 40px;
+  margin: 40px 40px 0px 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.p-retro {
+  font-size: 27px;
+  font-family: "FuenteLight-trial";
+  color: white;
+  font-weight: bold;
+  transition: font-size 3s ease;
+}
+
+.info {
+  border: none;
+  background-color: white;
+  margin-top: 40px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-family: "FuenteLight-trial";
+  font-size: 15px;
+  transition: 3s ease-in;
+}
+
+/* NOSOTROS */
+
+.imagen1 {
+  border-radius: 40px;
+  width: 200px;
+}
+
+.contenedor-nosotres {
+  max-width: 100%;
+  background-color: black;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.text-1 {
+  text-align: start;
+  line-height: 1.5;
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-family: "FuenteThink-trial";
+  font-weight: bold;
+  transition: transform 600ms ease;
+}
+
+.container-nosotres {
+  margin-bottom: 10px;
+}
+
+/* noticias session de la pagina */
+
+.noticias {
+  background-color: #000000;
+} 
+
+.lista-imagenes{
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding: 24px;
+  gap: 12px;
+  scroll-padding: 24px;
+  align-items: center
+}
+
+#item{
+  flex: 0 0 100%;
+}
+
+.image-noticias{
+  width: 600px;
+  height: 400px;
+}
+.enlace-noticia{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: "FuenteThink-trial";
+}
+
+.btn{
+  position: absolute;
+  margin: 0px 20px;
+  z-index: 10;
+  border: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background-color: rgb(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+
+.next{
+  right: 0px;
+}
+
+/* contenido de patrion */
+
+.patreon-content {
+  max-width: 100%;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagen2 {
+  width: 150px;
+  margin-left: 10px;
+}
+
+/* footer responsive */
+
+.foot-of-page {
+  width: 100%;
+  background-color: #110527;
+}
+
+.container-footer {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 40px 0px;
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer {
+  width: 150px;
+}
+
+.icon-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ph-facebook-logo,
+.ph-instagram-logo,
+.ph-globe {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.copy {
+  padding: 15px 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  /* nav */
+
+  .logo {
+    width: 130px;
+    margin: 20px 20px;
+  }
+
+  .login-button {
+    padding: none;
+    font-size: 8.7px;
+    text-align: center;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 350px;
+    padding: 0px 20px;
+    left: 0;
+    transition: left 0.3s;
+    background-color: white;
+  }
+
+  .a-navbar {
+    line-height: 40px;
+    color: black;
+  }
+
+  .navbar-menu_visible {
+    left: 100%;
+  }
+
+  /* inicio de session con js */
+
+  .content-dv-4x {
+    width: 300px;
+    height: 400px;
+    border: none;
+  }
+
+  .ouput {
+    display: flex;
+    width: 220px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+  }
+
+  /* BIENVENIDO */
+
+  .page-principal-container {
+    width: 80%;
+    margin: 20px 20px 0px 20px;
+    padding-left: 40px;
+  }
+
+  .p-retro {
+    font-size: 24px;
+    font-family: "FuenteLight-trial";
+    color: white;
+    font-weight: bold;
+    transition: 3s ease;
+  }
+
+  .info {
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+
+  /* NOSOTROS */
+
+  .contenedor-nosotres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen1 {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+
+  .text-1 {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  /* noticias */
+
+ .lista-imagenes{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 24px;
+    gap: 12px;
+    scroll-padding: 24px;
+    align-items: center
+  }
+  
+  #item{
+    flex: 0 0 100%;
+  }
+  
+  .image-noticias{
+    width: 300px;
+    height: 200px;
+  }
+  .enlace-noticia{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .btn{
+    margin: 0px 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .prev{
+    left: 0;
+  }
+  
+  .next{
+    right: 0px;
+  }
+  
+
+  /* FOOTER */
+
+  .container-footer {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 40px 0px;
+    justify-content: center;
+  }
+
+  .icon-social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .copy {
+    font-size: 15px;
+  }
+}
