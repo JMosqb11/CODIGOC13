@@ -87,75 +87,10 @@ let basicScrollTop = function () {
 
 basicScrollTop();
 
-// Js del banner principal de la pagina
+const toggleButton = document.getElementById(`toggle-button`);
 
-// botón prev
+toggleButton.addEventListener('change', () => {
 
-const images = document.querySelectorAll('.image-noticias')
-const prev = document.querySelector('.prev')
-const next = document.querySelector ('.next')
-const w = window.innerwidth
-let visible = 0
+    document.body.classList.toggle('dark')
 
-images.forEach((item, i) => {
-  if(i == 0){
-    return
-  }
-  
-anime({
-  targets: item,
-  left: `${w}px`,
-  easing: 'aeseInOutExpo',
-  duration: 500
-
-});
-})
-
-prev.addEventListener('click', () => { 
-  if (visible <= 0) {
-      return
-}
-visible--
-images[visible].classList.add('active')
-anime({  
-  targets: `.image-noticias-${visible + 1}`,
-  left: `${w}px'`, 
-  easing: 'easeInOutExpo',
-  duration: 500
-
-});
-anime({
-  targets: `.image-noticias-${visible}`,
-  left: '0px',
-  easing: 'easeInOutExpo',
-  duration: 500
-})
-})
-
-// botón next
-
-next.addEventListener('click', () => {
-
-  if (visible + 1 == images.length) {
-  return
-  };
-
-  visible++ 
-  
-  images[visible].classList.add('active') 
-  anime({ 
-    targets: `.image-noticias-${visible - 1}`, 
-    left: `-${w}px`,
-    easing: 'easeInOutExpo',
-    duration: 500
-  
-  }) 
-  anime({
-  
-  targets: `.image-noticias-${visible}`,
-  left: '0px', 
-  easing: 'easeInOutExpo',
-  duration: 500
-  
   })
-})

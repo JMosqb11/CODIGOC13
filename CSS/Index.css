@@ -1,3 +1,16 @@
+/* modo dark */
+
+:root {
+  --light-0: #f8f9fa;
+  --light-1: #e9ecef;
+  --light-2: #dee2e6;
+  --dark-0: #495057;
+  --dark-1: #343a40;
+  --dark-2: #212529;
+  --green: #c3c82c;
+  --blue: #2939ff;
+}
+
 /* estilos generales para la pagina */
 
 * {
@@ -313,7 +326,7 @@
   max-width: 1300px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
   padding: 40px 0px;
 }
@@ -355,6 +368,45 @@ figure {
   text-align: center;
   color: #ffffff;
   font-size: 20px;
+}
+
+.toggle-dark {
+  position: absolute;
+}
+
+.label-toggle-dark{
+  align-items: center;
+  background: var(--light-2);
+  background: url('https://i.ibb.co/ZWmbGbj/etmfdr.gif');
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 35px;
+  cursor: pointer;
+  display: flex;
+  height: 60px;
+  position: relative;
+  width: 110px;
+}
+
+#toggle-button:checked+.label-toggle-dark {
+  background: var(--dark-0);
+  background: url('https://i.pinimg.com/originals/94/ff/74/94ff7463a1574221ba6d4ada2c997e0b.gif');
+  background-position: center;
+  background-size: cover;
+}
+
+.label-toggle-dark .sun-moon {
+  background: radial-gradient(var(--green), transparent);
+  border-radius: 50%;
+  height: 30px;
+  margin: 4px;
+  transition: transform 0.3s ease;
+  width: 30px;
+}
+
+#toggle-button:checked+.label-toggle-dark .sun-moon {
+  background: radial-gradient(var(--blue), transparent);
+  transform: translateX(72px);
 }
 
 @media screen and (max-width: 768px) {

@@ -25,5 +25,6 @@ version 0.2.2 (24/08/2022)
 - le agregamos texto a las noticias.
 - Cambiamos el color de fondo, del menu responsive, Totop.
 - incrustamos las cajas.
+- ingresamos el modo dark.
 
 
