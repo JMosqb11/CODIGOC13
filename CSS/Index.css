@@ -294,6 +294,10 @@
   cursor: pointer;
 }
 
+.prev{
+  left: 0px;
+}
+
 .next{
   right: 0px;
 }
@@ -367,11 +371,13 @@ figure {
   padding: 15px 10px;
   text-align: center;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 12px;
+  font-family: "FuenteThink-trial";
 }
 
 .toggle-dark {
   position: absolute;
+  opacity: 0;
 }
 
 .label-toggle-dark{
@@ -566,6 +572,7 @@ figure {
     grid-gap: 30px;
     padding: 40px 0px;
     justify-content: center;
+    align-items: center;
   }
 
   .icon-social {
